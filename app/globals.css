@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-4{
+  border: 4px solid red;
+}
+
+.Card{
+  border: 5px solid black;
+}
+
+/* styles/ProductList.css */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjusts spacing between cards */
+  gap: 16px; /* Adds spacing between each card */
+}
+
+.product-card-wrapper {
+  flex: 1 1 calc(25% - 16px); /* This will ensure that the cards take up 25% width minus gap, adjusts to screen size */
+  min-width: 250px; /* Ensures minimum width for responsiveness */
+  max-width: 300px; /* Ensures max width */
+}
