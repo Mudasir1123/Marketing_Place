@@ -7,7 +7,8 @@ import SearchBar from './Components/SearchBar';
 import { CartProvider } from './Components/CartContext';
 import { WishlistProvider } from './Components/WishlistContext'; // Ensure this import is present
 import CartComponent from './Components/CartComponent';
-import WishlistComponent from './Components/WishlistComponent'; // Ensure this import is present
+import WishlistComponent from './Components/WishlistComponent';
+import UserProfile from './Components/UserProfile'; // Ensure this import is present
 
 const categories = [
   { id: '1', name: 'Electronics' },
@@ -77,6 +78,7 @@ const Page: React.FC = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
 
   return (
+    <>
     <CartProvider>
       <WishlistProvider> {/* Wrap the components that need Wishlist context */}
         <div className="p-4">
@@ -106,6 +108,8 @@ const Page: React.FC = () => {
         </div>
       </WishlistProvider>
     </CartProvider>
+    </>
+    
   );
 };
 

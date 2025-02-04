@@ -41,3 +41,79 @@ body {
   min-width: 250px; /* Ensures minimum width for responsiveness */
   max-width: 300px; /* Ensures max width */
 }
+
+
+/* styles/globals.css */
+
+.profile-container {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.address-item {
+  padding: 8px;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+}
+
+.order-item {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dcdfe2;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+
+/* styles/globals.css */
+
+.reviews-container {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.review-item {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
